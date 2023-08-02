@@ -1,0 +1,15 @@
+server:
+  port: 8889
+
+#db specific properties
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/microservice
+    username: postgres
+    password: root
+
+  #ORM s/w specific properties
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
