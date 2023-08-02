@@ -1,12 +1,12 @@
-package com.micro.hotel.exception;
+package com.micro.rating.exception;
 
-public class HotelException extends RuntimeException{
+public class RatingException extends RuntimeException{
 
-    public HotelException(){
+    public RatingException(){
         super("User exception occured");
     }
 
-    public HotelException(String message){
+    public RatingException(String message){
         super(message);
     }
 }

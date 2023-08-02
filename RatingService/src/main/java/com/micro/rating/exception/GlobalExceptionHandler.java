@@ -1,4 +1,4 @@
-package com.micro.hotel.exception;
+package com.micro.rating.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -11,8 +11,8 @@ import java.time.LocalDateTime;
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 
-    @ExceptionHandler(HotelException.class)
-    public ResponseEntity<ErrorDetails> hotelExceptionHandler(HotelException ex, WebRequest request){
+    @ExceptionHandler(RatingException.class)
+    public ResponseEntity<ErrorDetails> ratingExceptionHandler(RatingException ex, WebRequest request){
 
         ErrorDetails err = ErrorDetails
                 .builder()

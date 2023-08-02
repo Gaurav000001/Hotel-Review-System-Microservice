@@ -1,4 +1,4 @@
-package com.micro.hotel.exception;
+package com.micro.rating.exception;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
