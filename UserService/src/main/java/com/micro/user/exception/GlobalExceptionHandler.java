@@ -1,4 +1,4 @@
-package com.micro.user.service.exception;
+package com.micro.user.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

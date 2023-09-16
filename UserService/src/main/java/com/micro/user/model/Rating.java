@@ -1,7 +1,10 @@
-package com.micro.user.service.model;
+package com.micro.user.model;
 
 public class Rating {
 
     private String ratingId;
-    private String
+    private String userId;
+    private String hotelId;
+    private Integer rating;
+    private String feedback;
 }

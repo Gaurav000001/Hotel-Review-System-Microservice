@@ -1,6 +1,6 @@
-package com.micro.user.service.service;
+package com.micro.user.service;
 
-import com.micro.user.service.model.User;
+import com.micro.user.model.User;
 
 import java.util.List;
 

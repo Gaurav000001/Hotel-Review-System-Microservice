@@ -1,4 +1,4 @@
-package com.micro.user.service.model;
+package com.micro.user.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;

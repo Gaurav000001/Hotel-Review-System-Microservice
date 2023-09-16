@@ -1,4 +1,4 @@
-package com.micro.user.service.exception;
+package com.micro.user.exception;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

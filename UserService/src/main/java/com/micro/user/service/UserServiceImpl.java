@@ -1,8 +1,8 @@
-package com.micro.user.service.service;
+package com.micro.user.service;
 
-import com.micro.user.service.exception.UserException;
-import com.micro.user.service.model.User;
-import com.micro.user.service.repository.UserRepository;
+import com.micro.user.exception.UserException;
+import com.micro.user.repository.UserRepository;
+import com.micro.user.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
