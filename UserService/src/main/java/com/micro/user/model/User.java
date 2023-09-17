@@ -3,6 +3,7 @@ package com.micro.user.model;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.Size;
 import lombok.*;
 
 import java.util.ArrayList;
@@ -28,6 +29,7 @@ public class User {
     private String email;
 
     @Column(unique = true)
+    @Size(min = 10, max = 10, message = "Phone Number should be of 10 digits")
     private String phone;
 
     @Transient

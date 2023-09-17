@@ -8,3 +8,7 @@ spring:
     mongodb:
       uri: mongodb://localhost:27017
       database: microservice
+ 
+ 
+# No need for updation because mongodb is a noSQL database and dynamic 
+# show-sql will not work with noSQL databases

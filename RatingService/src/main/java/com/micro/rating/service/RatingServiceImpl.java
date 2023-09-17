@@ -16,6 +16,7 @@ public class RatingServiceImpl implements RatingService {
 
     @Override
     public Rating createRating(Rating rating) {
+    	if(rating.getRating() < 1 || rating.getRating() > 5) throw new RatingException("Rating should be from 1 to 5.");
         return ratingRepository.save(rating);
     }
 

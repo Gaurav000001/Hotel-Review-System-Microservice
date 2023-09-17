@@ -10,31 +10,31 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("micro")
+@RequestMapping("/micro/ratings/")
 public class RatingController {
 
     @Autowired
     private RatingService ratingService;
 
-    @PostMapping("/ratings")
+    @PostMapping
     public ResponseEntity<Rating> createRatingHandler(@RequestBody Rating rating){
 
         return ResponseEntity.ok(ratingService.createRating(rating));
     }
 
-    @GetMapping("/ratings/users/{userId}")
+    @GetMapping("users/{userId}/")
     public ResponseEntity<List<Rating>> GetAllRatingByUserIdHandler(@PathVariable String userId){
 
         return ResponseEntity.status(HttpStatus.OK).body(ratingService.getAllRatingsByUserId(userId));
     }
 
-    @GetMapping("/ratings/hotels/{hotelId}")
+    @GetMapping("hotels/{hotelId}/")
     public ResponseEntity<List<Rating>> GetAllRatingByHotelIdHandler(@PathVariable String hotelId){
 
         return ResponseEntity.status(HttpStatus.OK).body(ratingService.getAllRatingsByHotelId(hotelId));
     }
 
-    @GetMapping("/ratings")
+    @GetMapping
     public ResponseEntity<List<Rating>> GetAllRatingsHandler(){
 
         return ResponseEntity.status(HttpStatus.OK).body(ratingService.getAllRatings());

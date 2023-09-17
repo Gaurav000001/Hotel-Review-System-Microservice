@@ -9,25 +9,25 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/micro")
+@RequestMapping("/micro/hotels/")
 public class HotelController {
 
     @Autowired
     private HotelService hotelService;
 
-    @PostMapping("/hotels")
+    @PostMapping
     public ResponseEntity<Hotel> createHotelHandler(@RequestBody Hotel hotel){
 
         return ResponseEntity.ok(hotelService.createHotel(hotel));
     }
 
-    @GetMapping("/hotels")
+    @GetMapping
     public ResponseEntity<List<Hotel>> getAllHotelsHandler(){
 
         return ResponseEntity.ok(hotelService.getAllHotels());
     }
 
-    @GetMapping("/hotels/{hotelId}")
+    @GetMapping("{hotelId}/")
     public ResponseEntity<Hotel> getHotelHandler(@PathVariable String hotelId){
 
         return ResponseEntity.ok(hotelService.getHotel(hotelId));
