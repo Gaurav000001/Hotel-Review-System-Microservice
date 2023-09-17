@@ -7,9 +7,23 @@ spring:
     url: jdbc:postgresql://localhost:5432/microservice
     username: postgres
     password: root
+    
+  application:
+    name: HOTEL-SERVICE
 
   #ORM s/w specific properties
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
+    
+    
+    
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:9000/eureka
